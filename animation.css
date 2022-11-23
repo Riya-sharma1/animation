@@ -1,0 +1,44 @@
+body{
+    margin:0;
+}
+.div1{
+    width:100px ;
+    height: 100px;
+    background-image: linear-gradient(chocolate,brown);
+    border-radius: 50%;
+    position: absolute;
+
+/* animation property */
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-name: race;
+    animation-iteration-count: infinite;
+
+}
+ 
+@keyframes race{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 400px;
+        top: 0;
+        background-image: linear-gradient(purple, darkblue);
+    }
+    50%{
+        left: 400px;
+        top: 400px;
+        background-image: linear-gradient(green,yellow);
+    }
+    75%{
+        left: 0;
+        top: 400px;
+        background-image: linear-gradient(pink,lightblue);
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(brown,wheat);
+    }
+}
